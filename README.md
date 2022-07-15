@@ -20,5 +20,5 @@ The .nsi `installer` file is compiled by `makensis`. Note that this file is an e
 1. Use command `makensis [installer file].nsi`
 ### Windows
 1. [Install NSIS](https://nsis.sourceforge.io/Download)
-1. Use command `"C:\Program Files (x86)\NSIS\makensis.exe" "C:\projects\nsis\installer.nsi"`
+1. Use command `"C:\Program Files (x86)\NSIS\makensis.exe" "C:\[full path to root]\installer.nsi"`
 
