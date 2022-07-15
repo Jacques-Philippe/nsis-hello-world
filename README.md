@@ -1,3 +1,7 @@
+# How to use
+1. Run command `dev/create-installer/[your os]`
+1. Run the installer
+
 # Purpose
 Experiment with NSIS and create an installer.
 
@@ -5,4 +9,8 @@ Experiment with NSIS and create an installer.
 1. Create a basic `hello-world` .NET console app.
 1. Create an NSIS installer to install the compiled `hello-world`. Installer should
     1. have name `Hello World Installer`
+    1. Create the executable at `C:\Program Files\Installer Demo\hello-world.exe`
     1. Create a shortcut on desktop to the `hello-world.exe`
+
+# How it works
+The .nsi `installer` file is compiled by `makensis`. Note that this file is an executable to be run on a Windows OS.
