@@ -1,6 +1,17 @@
 # How to use
-1. Run command `dev/create-installer/[your os]`
-1. Run the installer
+1. Install `makensis`
+    - Linux (Ubuntu)
+        1. [Install NSIS](https://installati.one/ubuntu/21.04/nsis/)
+        1. Use command `makensis [installer file].nsi`
+    - Windows
+        1. [Install NSIS](https://nsis.sourceforge.io/Download)
+        1. Use command `"C:\Program Files (x86)\NSIS\makensis.exe" "C:\[full path to root]\installer.nsi"`
+1. Create installer
+    - Linux
+        - `dev/create-installer/linux.sh`
+    - Windows 
+        - Use command `"C:\Program Files (x86)\NSIS\makensis.exe" "C:\[full path to root]\installer.nsi"`
+1. (Windows only) Execute the installer
 
 # Purpose
 Experiment with NSIS and create an installer.
@@ -14,11 +25,4 @@ Experiment with NSIS and create an installer.
 
 # How it works
 The .nsi `installer` file is compiled by `makensis`. Note that this file is an executable to be run on a Windows OS.
-## Install `makensis`
-### Linux (Ubuntu)
-1. [Install NSIS](https://installati.one/ubuntu/21.04/nsis/)
-1. Use command `makensis [installer file].nsi`
-### Windows
-1. [Install NSIS](https://nsis.sourceforge.io/Download)
-1. Use command `"C:\Program Files (x86)\NSIS\makensis.exe" "C:\[full path to root]\installer.nsi"`
 
